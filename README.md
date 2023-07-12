@@ -27,3 +27,5 @@
   cordova run browser
 - ***在Android系統上運行輸入指令***  
   cordova run android
+- APK路徑  
+***platforms\android\app\build\outputs\apk\debug\app-debug.apk***
