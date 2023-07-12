@@ -95,7 +95,7 @@ function GetAuthorizationHeader()
 //取得所需的資料
 function GetApiResponse(accesstoken)
 {
-var stName;//stName=stationName
+    var stName; //stName=stationName
     if (accesstoken != undefined)
     {
         //台北資料
@@ -113,7 +113,7 @@ var stName;//stName=stationName
                 console.log("St1", Data.length);
                 for (var i = 0; i < Data.length; i++)
                 {
-                    stName = Data[i].StationName.Zh_tw; 
+                    stName = Data[i].StationName.Zh_tw;
                     bikeData[0][i][0] = stName.split('_')[1];
                     bikeData[0][i][3] = Data[i].StationPosition.PositionLat;
                     bikeData[0][i][4] = Data[i].StationPosition.PositionLon;
@@ -167,7 +167,7 @@ var stName;//stName=stationName
                 for (var i = 0; i < Data.length; i++)
                 {
                     stName = Data[i].StationName.Zh_tw;
-                    bikeData[1][i][0]=stName.split('_')[1];
+                    bikeData[1][i][0] = stName.split('_')[1];
                     bikeData[1][i][3] = Data[i].StationPosition.PositionLat;
                     bikeData[1][i][4] = Data[i].StationPosition.PositionLon;
                 }
@@ -218,7 +218,7 @@ function addData()
             $("#ubikeList").append(
                 '<li class="ui-li-static ui-body-inherit">' +
                 '<h1 style="display: inline;text-align:left">' + bikeData[0][i][0] + '</h1>' +
-                '<a href="' + mapLink + bikeData[0][i][3] + ',' + bikeData[0][i][4] + '">' +
+                '<a href="' + mapLink + bikeData[0][i][3] + ',' + bikeData[0][i][4] + '" target="_blank ">' +
                 '<button data-role="none" style="display: inline;background:transparent;border-width: 0px" class="fa-solid fa-location-dot"></button>' +
                 '</a>' +
                 '<p>剩餘租借輛:' + bikeData[0][i][1] + '</p>' + '<p>可歸還位:' + bikeData[0][i][2] + '</p>' +
@@ -234,7 +234,7 @@ function addData()
             $("#ubikeList").append(
                 '<li class="ui-li-static ui-body-inherit">' +
                 '<h1 style="display: inline;text-align:left">' + bikeData[1][i][0] + '</h1>' +
-                '<a href="' + mapLink + bikeData[1][i][3] + ',' + bikeData[1][i][4] + '">' +
+                '<a href="' + mapLink + bikeData[1][i][3] + ',' + bikeData[1][i][4] + '" target="_blank ">' +
                 '<button data-role="none" style="display: inline;background:transparent;border-width: 0px" class="fa-solid fa-location-dot"></button>' +
                 '</a>' +
                 '<p>剩餘租借輛:' + bikeData[1][i][1] + '</p>' + '<p>可歸還位:' + bikeData[1][i][2] + '</p>' +
