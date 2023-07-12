@@ -1,5 +1,6 @@
 # YouBike雙北動態資訊
-可在網頁或Android系統上運行
+可在網頁或Android系統上運行  
+- [影片連結](https://www.youtube.com/watch?v=3eYjRjsJVn0&t=1s&ab_channel=%E7%BF%94%E5%AE%87%E6%A5%8A)
 # API
 - [TDX運輸資料流通服務平臺](https://tdx.transportdata.tw/)
 # Cordova  
